@@ -1,9 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&family=Open+Sans:wght@400;500;700&display=swap");
+:root {
+  --gap: 1rem;
+  --primary-color: #0a1128;
+  --secondary-color: #fff;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 body {
-  background-color: red;
+  font-size: 2rem;
+  font-family: "Open sans", sans-serif;
+  color: var(--primary-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 5.5rem;
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+h4 {
+  font-size: 4.5rem;
+}
+
+h5 {
+  font-size: 4rem;
+}
+
+h6 {
+  font-size: 3.5rem;
+}
+.main-bg {
+  background-image: url("../img/endless.svg");
+  background-size: contain;
+  background-position: center center;
+  color: var(--secondary-color);
+}
+.white-bg {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.main-content {
+  max-width: 1200px;
+
+  margin: 0 auto;
+  gap: var(--gap);
+}
+
+.section {
+  min-height: 100vh;
 }
