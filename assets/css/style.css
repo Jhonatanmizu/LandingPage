@@ -3,6 +3,7 @@
   --gap: 1rem;
   --primary-color: #0a1128;
   --secondary-color: #fff;
+  --grey: #eee;
 }
 * {
   margin: 0;
@@ -48,6 +49,12 @@ h5 {
 h6 {
   font-size: 3.5rem;
 }
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
 .main-bg {
   background-image: url("../img/endless.svg");
   background-size: contain;
@@ -67,4 +74,49 @@ h6 {
 
 .section {
   min-height: 100vh;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: var(--grey) 2px solid;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav ul {
+  display: flex;
+  gap: var(--gap);
+  list-style: none;
+}
+.nav ul li a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: var(--primary-color);
+  padding: 2rem;
+  font-size: 1.8rem;
+  border-bottom: 0 solid crimson;
+}
+.menu ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background-color: crimson;
+  transition: 0.3s ease-in-out;
+}
+.menu ul li a:hover::after {
+  left: 25%;
+  width: 50%;
 }
