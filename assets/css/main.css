@@ -1,0 +1,23 @@
+.main-bg {
+  background-image: url("../img/endless.svg");
+  background-size: contain;
+  background-position: center center;
+  color: var(--secondary-color);
+}
+.white-bg {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.main-content {
+  max-width: 120rem;
+
+  margin: 0 auto;
+  gap: var(--gap);
+}
+
+.section {
+  min-height: 100vh;
+}
+.menu-spacing {
+  height: 9.5rem;
+}
